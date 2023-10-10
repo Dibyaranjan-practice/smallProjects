@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.symbol {
+  display: block;
+  background-color: red;
+  z-index: 100;
+  margin-top: 10px;
+  margin-left: 30px;
+  padding: 3px;
+}
+nav {
+  display: none;
+  width: 25%;
+  min-width: 70px;
+  height: 40vh;
+  z-index: 100;
+  background-color: rgba(35, 13, 13, 0.6);
+  color: white;
+}
+main {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+ul li {
+  margin: 10px 0;
+}
