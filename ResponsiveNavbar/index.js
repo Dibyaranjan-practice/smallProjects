@@ -6,3 +6,10 @@ symbol.addEventListener("click", () => {
   if (count % 2 == 1) nav.style.display = "block";
   else nav.style.display = "none";
 });
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 568) {
+    nav.style.display = "block";
+  } else {
+    nav.style.display = "none";
+  }
+});

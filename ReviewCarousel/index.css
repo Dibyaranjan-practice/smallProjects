@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+.heading {
+  font-size: 6rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.card {
+  background-color: rgb(84, 168, 39, 0.5);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 70vw;
+  height: 65%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.photo {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.description {
+  padding: 0rem 1.5rem;
+  word-wrap: break-word;
+}
+.profile_photo img {
+  border-radius: 50%;
+}
+.profile_photo::after {
+  content: "";
+  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(18, 160, 231);
+  position: absolute;
+  top: -5px;
+  left: 7px;
+  z-index: -100;
+}
+.designation {
+  color: rgb(84, 165, 219);
+}
+button {
+  padding: 3px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+.fa-solid {
+  color: rgb(96, 15, 222);
+  background-color: rgb(96, 15, 222);
+}
