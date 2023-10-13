@@ -7,9 +7,9 @@ async function add(i, j, k) {
   card.style.backgroundColor = `rgb(${i}, ${j}, ${k})`;
   container.appendChild(card);
 }
-for (let i = 0; i < 256; i += 3) {
-  for (let j = 0; j < 256; j += 3) {
-    for (let k = 0; k < 256; k += 3) {
+for (let i = 255; i >= 0; i -= 3) {
+  for (let j = 255; j >= 0; j -= 3) {
+    for (let k = 255; k >= 0; k -= 6) {
       add(i, j, k);
     }
   }
